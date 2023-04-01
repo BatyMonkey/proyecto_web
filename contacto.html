@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Tienda</title>
-  <link href="css/index.css" rel="stylesheet" type="text/css">
+  <link href="css/contact.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
@@ -22,7 +22,10 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="login.html">Crear cuenta</a>
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="productos.html">Productos</a>
@@ -30,25 +33,31 @@
           <li class="nav-item">
             <a class="nav-link" href="acerca.html">Acerca de nosotros</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contacto.html">Contactanos</a>
-          </li>
         </ul>
       </div>
     </nav>
   </header>
-  <div class="container-main">
-    <div class="text-main">
-      <h3>Heading</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quae distinctio cupiditate fugit sit illum,
-        repudiandae, itaque necessitatibus, numquam aperiam obcaecati quas libero id autem! Corrupti enim eveniet autem.
-        Id.</p>
-    </div>
-    <div class="imagenTest">
-      <img src="img/main/logo.webp" alt="ImagenTest">
-    </div>
-  </div>
-  <!--   /*Fin Container*/ -->
+  <main>
+    <form id="contact-form">
+      <label for="name">Nombre: *</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="apellido">Apellido: * </label>
+      <input type="text" id="apellido" name="apellido" required>
+
+      <label for="email">Correo electrónico: *</label>
+      <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+        title="Please enter a valid email address">
+
+      <label for="numero">Numero de teléfono: *</label>
+      <input type="number" id="numero" name="number" required title="Ingrese un numero de teléfono válido">
+
+      <label for="message">Mensaje: * </label>
+      <textarea id="message" name="message" required></textarea><br>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
   <footer>
     <div>
       <p>&copy; 2023 Cellphone Store. Todos los derechos reservados.</p>
