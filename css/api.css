@@ -1,0 +1,235 @@
+header {
+  background-color: #00bfff;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;  
+}
+
+nav li {
+	margin-right: 20px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+nav a:hover {
+	color: #f00;
+}
+
+/*footer*/
+footer {
+	background-color: #007bff;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+  justify-content: space-between;
+}
+.redes-sociales {
+    width: 30%;
+    text-align: center;
+    display: flex;
+    margin-left: auto;
+}
+.redes-sociales ul li {
+    background-color: white;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+}
+.redes-sociales img {
+    height: 20px;
+}
+
+/* Estilos para el título principal */
+h1 {
+  color: #e2c044;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+/* Estilos para el formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: #2a2f3c;
+  border-radius: 1rem;
+}
+
+label {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+select {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 0.3rem;
+  border: none;
+}
+
+button[type="submit"] {
+  background-color: #fed734;
+  color: #2a2f3c;
+  font-size: 1.2rem;
+  border-radius: 0.3rem;
+  border: none;
+  padding: 0.5rem 2rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #f5c63d;
+}
+
+/* Estilos para la lista de personajes */
+ul#personajes-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+  padding: 0;
+  list-style: none;
+}
+
+ul#personajes-lista li {
+  background-color: #fed734;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ul#personajes-lista li img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+ul#personajes-lista li h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #2a2f3c;
+}
+
+ul#personajes-lista li p {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #2a2f3c;
+}
+
+/* Estilos para la paginación */
+#paginacion {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+#anterior,
+#siguiente {
+  background-color: #93b7d3;
+  color: #fed734;
+  border-radius: 0.3rem;
+  border: none;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#anterior:hover,
+#siguiente:hover {
+  background-color: #2a2f3c;
+  color: #ffffff;
+}
+
+body {
+background-color: #04182F;
+color: #FFFFFF;
+}
+
+
+
+label {
+color: #FFFFFF;
+}
+
+input[type="text"],
+select {
+background-color: #FEDD00;
+border: none;
+color: #04182F;
+padding: 0.5rem;
+margin-bottom: 1rem;
+font-size: 1.1rem;
+}
+
+button[type="submit"],
+button {
+background-color: #FEDD00;
+border: none;
+color: #04182F;
+padding: 0.5rem;
+margin-bottom: 1rem;
+font-size: 1.1rem;
+}
+
+button:hover {
+background-color: #04182F;
+color: #FEDD00;
+}
+
+ul#personajes-lista {
+list-style: none;
+padding: 0;
+margin: 2rem 0;
+}
+
+ul#personajes-lista li {
+background-color: #FFFFFF;
+padding: 1rem;
+margin-bottom: 1rem;
+border-radius: 5px;
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+ul#personajes-lista li h2 {
+color: #04182F;
+font-size: 1.2rem;
+margin-top: 0;
+}
+
+div#paginacion {
+text-align: center;
+}
+.boton-paginacion {
+  margin-right: 10px;
+}

@@ -4,12 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Tienda</title>
-  <link href="css/index.css" rel="stylesheet" type="text/css">
+  <title>Productos</title>
+  <link href="css/product.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+    integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
-<!--   /*Fin Head*/ -->
 
 <body>
   <header>
@@ -22,35 +24,43 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="login.html">Crear cuenta</a>
+            <a class="nav-link" href="login.html">Login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="productos.html">Productos</a>
+            <a class="nav-link" href="index.html">Inicio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="acerca.html">Acerca de nosotros</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contacto.html">Contactanos</a>
+          </li>
           <li class="nav-item">
-            <a class="nav-link" href="api.html">Api</a>
+            <a class="nav-link" href="api.html">API</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
-  <div class="container-main">
-    <div class="text-main">
-      <h3>Heading</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quae distinctio cupiditate fugit sit illum,
-        repudiandae, itaque necessitatibus, numquam aperiam obcaecati quas libero id autem! Corrupti enim eveniet autem.
-        Id.</p>
+  <!-- Fin de Header -->
+  <div class="container">
+    <div class="product-details">
+      <h1>Product Title</h1>
+      <p class="description">Product Description</p>
+      <p class="price">$9.99</p>
+      <button class="buy-button">Buy Now</button>
     </div>
-    <div class="imagenTest">
-      <img src="img/main/logo.webp" alt="ImagenTest">
+    <div class="product-image">
+      <div class="product-images">
+        <ul class="product-images-list">
+          <li><img src="img/productos/logo.webp" alt="Product Image 1"></li>
+          <li><img src="img/productos/logo2.webp" alt="Product Image 2"></li>
+          <li><img src="img/productos/logo3.webp" alt="Product Image 3"></li>
+        </ul>
+      </div>
     </div>
   </div>
-  <!--   /*Fin Container*/ -->
+
   <footer>
     <div>
       <p>&copy; 2023 Cellphone Store. Todos los derechos reservados.</p>
@@ -65,7 +75,7 @@
     </div>
   </footer>
   <!--   /*Fin Footer*/ -->
-  <script src="js/script.js"></script>
+  <script src="js/productos.js"></script>
 </body>
 
 </html>

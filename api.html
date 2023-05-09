@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="css/api.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<title>Filtro de personajes de Rick and Morty</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Tienda Celulares</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Crear cuenta</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="acerca.html">Acerca de nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contactanos</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <h1>Filtro de personajes de Rick and Morty</h1>
+  <form id="formulario-filtro">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre">
+
+    <label for="especie">Especie:</label>
+    <select id="especie" name="especie">
+      <option value="">Seleccione una especie</option>
+      <option value="Human">Humano</option>
+      <option value="Alien">Alienígena</option>
+    </select>
+
+    <label for="genero">Género:</label>
+    <select id="genero" name="genero">
+      <option value="">Seleccione un género</option>
+      <option value="Male">Masculino</option>
+      <option value="Female">Femenino</option>
+      <option value="Genderless">Sin género</option>
+      <option value="unknown">Desconocido</option>
+    </select>
+
+    <label for="estado">Estado:</label>
+    <select id="estado" name="estado">
+      <option value="">Seleccione un estado</option>
+      <option value="Alive">Vivo</option>
+      <option value="Dead">Muerto</option>
+      <option value="unknown">Desconocido</option>
+    </select>
+
+    <label for="tipo">Tipo:</label>
+    <select id="tipo" name="tipo">
+      <option value="">Seleccione un tipo</option>
+      <option value="Human">Humano</option>
+      <option value="Alien">Alienígena</option>
+      <option value="Humanoid">Humanoide</option>
+      <option value="Cronenberg">Cronenberg</option>
+      <option value="Mytholog">Mitológico</option>
+      <option value="Animal">Animal</option>
+      <option value="Robot">Robot</option>
+      <option value="Disease">Enfermedad</option>
+      <option value="Poopybutthole">Mr. Poopybutthole</option>
+    </select>
+
+    <button type="submit">Buscar</button>
+  </form>
+
+  <ul id="personajes-lista"></ul>
+
+  <div id="paginacion">
+    <button id="anterior">Anterior</button>
+    <button id="siguiente">Siguiente</button>
+  </div>
+
+
+  <<footer>
+    <div>
+      <p>&copy; 2023 Cellphone Store. Todos los derechos reservados.</p>
+    </div>
+    <div class="redes-sociales">
+      <ul>
+        <li><img src="img/icons/facebook-f-brands.svg" alt="facebook" /></li>
+        <li><img src="img/icons/google-plus-g-brands.svg" alt="google+" /></li>
+        <li><img src="img/icons/instagram-brands.svg" alt="instagram" /></li>
+        <li><img src="img/icons/envelope-solid.svg" alt="mail" /></li>
+      </ul>
+    </div>
+    </footer>
+    <!--   /*Fin Footer*/ -->
+
+    <script src="js/api.js"></script>
+</body>
+
+</html>
