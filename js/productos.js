@@ -18,17 +18,3 @@ function moveToNextImage() {
 
 
 const carouselInterval = setInterval(moveToNextImage, 3000);
-<<<<<<< HEAD
-=======
-
-
-// nav bar
-document.addEventListener("DOMContentLoaded", function() {
-  const navbarToggler = document.querySelector(".navbar-toggler");
-  const navbarCollapse = document.querySelector(".navbar-collapse");
-  navbarToggler.addEventListener("click", () => {
-    navbarToggler.classList.toggle("active");
-    navbarCollapse.classList.toggle("show");
-  });
-});
->>>>>>> f0d66abdb6a913c19d0bec326b416c72505a4f5a
